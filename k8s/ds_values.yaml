@@ -168,6 +168,15 @@ config:
         url: "https://$HOSTIP:10250"
         bearer_token: "/var/run/secrets/kubernetes.io/serviceaccount/token"
         insecure_skip_verify: true
+    - kube_inventory:
+        url: "https://kubernetes.default.svc"
+        bearer_token: "/var/run/secrets/kubernetes.io/serviceaccount/token"
+        insecure_skip_verify: true
+        resource_include:
+          - pods
+          - nodes
+          - namespaces
+          - services
     - statsd:
         service_address: ":9125"
         percentiles:
