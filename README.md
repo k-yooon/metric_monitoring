@@ -2,3 +2,4 @@
 
 - grafana
 - influxdb
+- telegraf
