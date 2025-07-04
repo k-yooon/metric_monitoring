@@ -1,11 +1,5 @@
 version: '3'
 
-# volumes:
-#   prometheus_data:
-#     external: true
-  # grafana_data:
-  #   external: true
-
 services:
   grafana:
     image: grafana/grafana:12.0.2
